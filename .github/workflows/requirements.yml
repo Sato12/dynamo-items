@@ -10,5 +10,5 @@ jobs:
     with:
       dyn_pk: pk
       dyn_sk: sk
-      dyn_items_path: src/rules.json"
+      dyn_items_path: src/rules.json
       
