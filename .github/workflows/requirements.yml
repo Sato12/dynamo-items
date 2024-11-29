@@ -6,7 +6,7 @@ on:
 jobs:
   table-ocr-class-names:
     name: Insert Items
-    uses: ./.github/workflows/dyn_insert_reusable.yml
+    uses: Sato12/test-pipelines/.github/workflows/.github/workflows/requirements_dynamo_table.yml@main
     with:
       dyn_tbl_name: "BDB.DYN.TBL.TRANSVCMP.REPOSITORY"
       dyn_pk: pk
@@ -14,7 +14,4 @@ jobs:
       dyn_script_path: "./dyn_pipeline_utils/put_items.py"
       dyn_validate_path: "./dyn_pipeline_utils/validate_duplicates.py"
       dyn_items_path: "../../src/rules.JSON"
-    secrets:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_VPT_PR }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_VPT_PR }}
       
