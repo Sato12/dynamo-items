@@ -8,10 +8,8 @@ jobs:
     name: Insert Items
     uses: Sato12/test-pipelines/.github/workflows/requirements_dynamo_table.yml@main
     with:
-      dyn_tbl_name: "BDB.DYN.TBL.TRANSVCMP.REPOSITORY"
       dyn_pk: pk
       dyn_sk: sk
-      dyn_script_path: "./dyn_pipeline_utils/put_items.py"
       dyn_validate_path: "./dyn_pipeline_utils/validate_duplicates.py"
       dyn_items_path: "../../src/rules.JSON"
       
