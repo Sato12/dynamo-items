@@ -179,5 +179,186 @@
                 }
             ]
         }
+    },
+    {
+        "pk": {
+            "S": "aaaaaaa1-ddd3-4eeb-a3bb-85273a33aedc"
+        },
+        "sk": {
+            "S": "8400099765"
+        },
+        "capturas": {
+            "M": {
+                "estado": {
+                    "S": "PENDIENTE"
+                },
+                "flujo": {
+                    "S": "preAprobados"
+                },
+                "grupo": {
+                    "S": "Originación"
+                },
+                "idMantiz": {
+                    "S": "8876500"
+                },
+                "pantalla": {
+                    "L": [
+                        {
+                            "M": {
+                                "campos": {
+                                    "M": {
+                                        "codigoCiiu": {
+                                            "S": "7220"
+                                        },
+                                        "edad": {
+                                            "N": "29"
+                                        },
+                                        "lugarExpedicion": {
+                                            "S": "Cali, Valle del Cauca"
+                                        },
+                                        "monto": {
+                                            "N": "42000000"
+                                        },
+                                        "nombreCliente": {
+                                            "S": "Michael Rodriguez Chaux"
+                                        },
+                                        "numeroAfiliacion": {
+                                            "S": "1234567"
+                                        },
+                                        "numeroIdentificacion": {
+                                            "S": "8400099765"
+                                        },
+                                        "oficinaCreacion": {
+                                            "S": "0301"
+                                        },
+                                        "plazo": {
+                                            "N": "24"
+                                        },
+                                        "producto": {
+                                            "S": "libranza"
+                                        },
+                                        "requiereVoBoPagaduria": {
+                                            "S": "Si"
+                                        },
+                                        "tasa": {
+                                            "N": "10.5"
+                                        },
+                                        "tipoIdentificacion": {
+                                            "S": "C"
+                                        },
+                                        "valorCuota": {
+                                            "N": "450000"
+                                        }
+                                    }
+                                },
+                                "nombre": {
+                                    "S": "Control Documentos"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "documentos": {
+            "M": {
+                "IC - Certificado Laboral (CL)": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                },
+                "IC - Comprobante Nomina": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                },
+                "IC - Declaracion de Renta (DR)": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                },
+                "IC - Documento de identificacion (DI)": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                },
+                "IC - Solicitud (SSF)": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                }
+            }
+        },
+        "rules": {
+            "L": [
+                {
+                    "M": {
+                        "content": {
+                            "S": "aaaaaaaaa"
+                        },
+                        "createdAt": {
+                            "S": "2024-11-06T18:26:31.484Z"
+                        },
+                        "id": {
+                            "S": "cb612e87-22a8-451e-9fb7-8b4216b13762"
+                        },
+                        "updatedAt": {
+                            "S": "2024-11-06T18:26:31.484Z"
+                        },
+                        "__typename": {
+                            "S": "Todo"
+                        }
+                    }
+                },
+                {
+                    "M": {
+                        "content": {
+                            "S": "uuu"
+                        },
+                        "createdAt": {
+                            "S": "2024-11-05T13:38:47.455Z"
+                        },
+                        "id": {
+                            "S": "eb173e54-c112-4dff-9132-4137eeee7443"
+                        },
+                        "updatedAt": {
+                            "S": "2024-11-05T13:38:47.455Z"
+                        },
+                        "__typename": {
+                            "S": "Todo"
+                        }
+                    }
+                },
+                {
+                    "M": {
+                        "content": {
+                            "NULL": true
+                        },
+                        "createdAt": {
+                            "S": "2024-10-07T18:48:13.841Z"
+                        },
+                        "id": {
+                            "S": "6fe9668b-52b0-4ec5-bd1b-a5c996e1edce"
+                        },
+                        "updatedAt": {
+                            "S": "2024-10-07T18:48:13.841Z"
+                        },
+                        "__typename": {
+                            "S": "Todo"
+                        }
+                    }
+                }
+            ]
+        }
     }
 ]
