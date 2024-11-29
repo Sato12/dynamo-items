@@ -1,73 +1,183 @@
 [
     {
-        "pk": "aaaaaaa1-ddd3-4eeb-a3bb-85273a33aedc",
-        "sk": "8400099765",
+        "pk": {
+            "S": "aaaaaaa1-ddd3-4eeb-a3bb-85273a33aedc"
+        },
+        "sk": {
+            "S": "8400099765"
+        },
         "capturas": {
-         "estado": "PENDIENTE",
-         "flujo": "preAprobados",
-         "grupo": "Originación",
-         "idMantiz": "8876500",
-         "pantalla": [
-          {
-           "campos": {
-            "codigoCiiu": "7220",
-            "edad": 29,
-            "lugarExpedicion": "Cali, Valle del Cauca",
-            "monto": 42000000,
-            "nombreCliente": "Michael Rodriguez Chaux",
-            "numeroAfiliacion": "1234567",
-            "numeroIdentificacion": "8400099765",
-            "oficinaCreacion": "0301",
-            "plazo": 24,
-            "producto": "libranza",
-            "requiereVoBoPagaduria": "Si",
-            "tasa": 10.5,
-            "tipoIdentificacion": "C",
-            "valorCuota": 450000
-           },
-           "nombre": "Control Documentos"
-          }
-         ]
+            "M": {
+                "estado": {
+                    "S": "PENDIENTE"
+                },
+                "flujo": {
+                    "S": "preAprobados"
+                },
+                "grupo": {
+                    "S": "Originación"
+                },
+                "idMantiz": {
+                    "S": "8876500"
+                },
+                "pantalla": {
+                    "L": [
+                        {
+                            "M": {
+                                "campos": {
+                                    "M": {
+                                        "codigoCiiu": {
+                                            "S": "7220"
+                                        },
+                                        "edad": {
+                                            "N": "29"
+                                        },
+                                        "lugarExpedicion": {
+                                            "S": "Cali, Valle del Cauca"
+                                        },
+                                        "monto": {
+                                            "N": "42000000"
+                                        },
+                                        "nombreCliente": {
+                                            "S": "Michael Rodriguez Chaux"
+                                        },
+                                        "numeroAfiliacion": {
+                                            "S": "1234567"
+                                        },
+                                        "numeroIdentificacion": {
+                                            "S": "8400099765"
+                                        },
+                                        "oficinaCreacion": {
+                                            "S": "0301"
+                                        },
+                                        "plazo": {
+                                            "N": "24"
+                                        },
+                                        "producto": {
+                                            "S": "libranza"
+                                        },
+                                        "requiereVoBoPagaduria": {
+                                            "S": "Si"
+                                        },
+                                        "tasa": {
+                                            "N": "10.5"
+                                        },
+                                        "tipoIdentificacion": {
+                                            "S": "C"
+                                        },
+                                        "valorCuota": {
+                                            "N": "450000"
+                                        }
+                                    }
+                                },
+                                "nombre": {
+                                    "S": "Control Documentos"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "documentos": {
-         "IC - Certificado Laboral (CL)": [
-          "PENDING"
-         ],
-         "IC - Comprobante Nomina": [
-          "PENDING"
-         ],
-         "IC - Declaracion de Renta (DR)": [
-          "PENDING"
-         ],
-         "IC - Documento de identificacion (DI)": [
-          "PENDING"
-         ],
-         "IC - Solicitud (SSF)": [
-          "PENDING"
-         ]
+            "M": {
+                "IC - Certificado Laboral (CL)": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                },
+                "IC - Comprobante Nomina": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                },
+                "IC - Declaracion de Renta (DR)": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                },
+                "IC - Documento de identificacion (DI)": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                },
+                "IC - Solicitud (SSF)": {
+                    "L": [
+                        {
+                            "S": "PENDING"
+                        }
+                    ]
+                }
+            }
         },
-        "rules": [
-         {
-          "content": "aaaaaaaaa",
-          "createdAt": "2024-11-06T18:26:31.484Z",
-          "id": "cb612e87-22a8-451e-9fb7-8b4216b13762",
-          "updatedAt": "2024-11-06T18:26:31.484Z",
-          "__typename": "Todo"
-         },
-         {
-          "content": "uuu",
-          "createdAt": "2024-11-05T13:38:47.455Z",
-          "id": "eb173e54-c112-4dff-9132-4137eeee7443",
-          "updatedAt": "2024-11-05T13:38:47.455Z",
-          "__typename": "Todo"
-         },
-         {
-          "content": null,
-          "createdAt": "2024-10-07T18:48:13.841Z",
-          "id": "6fe9668b-52b0-4ec5-bd1b-a5c996e1edce",
-          "updatedAt": "2024-10-07T18:48:13.841Z",
-          "__typename": "Todo"
-         }
-        ]
-       }
+        "rules": {
+            "L": [
+                {
+                    "M": {
+                        "content": {
+                            "S": "aaaaaaaaa"
+                        },
+                        "createdAt": {
+                            "S": "2024-11-06T18:26:31.484Z"
+                        },
+                        "id": {
+                            "S": "cb612e87-22a8-451e-9fb7-8b4216b13762"
+                        },
+                        "updatedAt": {
+                            "S": "2024-11-06T18:26:31.484Z"
+                        },
+                        "__typename": {
+                            "S": "Todo"
+                        }
+                    }
+                },
+                {
+                    "M": {
+                        "content": {
+                            "S": "uuu"
+                        },
+                        "createdAt": {
+                            "S": "2024-11-05T13:38:47.455Z"
+                        },
+                        "id": {
+                            "S": "eb173e54-c112-4dff-9132-4137eeee7443"
+                        },
+                        "updatedAt": {
+                            "S": "2024-11-05T13:38:47.455Z"
+                        },
+                        "__typename": {
+                            "S": "Todo"
+                        }
+                    }
+                },
+                {
+                    "M": {
+                        "content": {
+                            "NULL": true
+                        },
+                        "createdAt": {
+                            "S": "2024-10-07T18:48:13.841Z"
+                        },
+                        "id": {
+                            "S": "6fe9668b-52b0-4ec5-bd1b-a5c996e1edce"
+                        },
+                        "updatedAt": {
+                            "S": "2024-10-07T18:48:13.841Z"
+                        },
+                        "__typename": {
+                            "S": "Todo"
+                        }
+                    }
+                }
+            ]
+        }
+    }
 ]
