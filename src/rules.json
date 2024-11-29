@@ -1,0 +1,125 @@
+[
+    {
+        "pk": {
+            "S": "preAprobados"
+        },
+        "sk": {
+            "S": "Control Documentos#Originación#default"
+        },
+        "rules": {
+            "L": [
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.numeroDocumento, documentos.IC - Documento de identificacion (DI).number_id)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.nombreCliente, documentos.IC - Documento de identificacion (DI).client_name)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.fechaDeNacimiento, documentos.IC - Documento de identificacion (DI).birth_date)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.fechaExpedicion, documentos.IC - Documento de identificacion (DI).expedition_date)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.lugarExpedicion, documentos.IC - Documento de identificacion (DI).expedition_place)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.numeroIdentificacion, documentos.IC - Solicitud (SSF).document)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.nombreCliente, documentos.IC - Solicitud (SSF).client_name)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.fechaSolicitud, documentos.IC - Solicitud (SSF).request_date)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.oficinaCreacion, documentos.IC - Solicitud (SSF).office)"
+                },
+                {
+                    "S": "isSigned( documentos.IC - Solicitud (SSF).client_signature)"
+                },
+                {
+                    "S": "isSigned( documentos.IC - Solicitud (SSF).employee_signature)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.nombreCliente, documentos.EC - Poliza de Seguro.client_name)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.numeroIdentificacion, documentos.EC - Poliza de Seguro.number_id)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.edad, documentos.EC - Poliza de Seguro.number_id)"
+                },
+                {
+                    "S": "checkfillCompleted( documentos.EC - Poliza de Seguro.XXdeclaracion_asegurabilidadXXX )"
+                },
+                {
+                    "S": "checkTotalDebt( capturas.0.pantalla.0.campos, documentos.EC - Poliza de Seguro.cumulative_debt )"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.XXXfechaFirmaXXX, documentos.EC - Poliza de Seguro.signed_date)"
+                },
+                {
+                    "S": "isSigned( documentos.EC - Poliza de Seguro.XXfirmaXXX )"
+                }
+            ]
+        }
+    },
+    {
+        "pk": {
+            "S": "preAprobados"
+        },
+        "sk": {
+            "S": "Control Documentos#Originación#Libranza"
+        },
+        "rules": {
+            "L": [
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.productosSolicitados, documentos.IC - Solicitud (SSF).requested_product)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.plazoOriginacion, documentos.IC - Solicitud (SSF).loan_term)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.productosSolicitados, documentos.EC - Poliza de Seguro.credit_line)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.montosolicitado, documentos.EC - Poliza de Seguro.disbursement_amount)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.plazoOriginacion, documentos.EC - Poliza de Seguro.loan_term)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.plazoOriginacion, documentos.IC - Carta al Pagador.loan_term)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos., documentos.IC - Carta al Pagador.month_fee)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos., documentos.IC - Carta al Pagador.rate)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.numeroDocumento, documentos.IC - Carta al Pagador.document)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.nombreCliente, documentos.IC - Carta al Pagador.client_name)"
+                },
+                {
+                    "S": "isSigned( documentos.IC - Carta al Pagador.employee_signature)"
+                },
+                {
+                    "S": "isSigned( documentos.IC - Carta al Pagador.payer_signature)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.productosSolicitados, documentos.EC - Poliza de Seguro.credit_line)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.montosolicitado, documentos.EC - Poliza de Seguro.approved_insured_amount)"
+                },
+                {
+                    "S": "similarity_ratio(capturas.0.pantalla.0.campos.afiliacionCodigoMilitar, documentos.IC - Comprobante Nomina.no_membership)"
+                }
+            ]
+        }
+    }
+]

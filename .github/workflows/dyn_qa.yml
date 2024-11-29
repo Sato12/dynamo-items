@@ -1,0 +1,16 @@
+name: QA - Put Items on Dynamo
+on:
+  push:
+    branches: [ qa ]
+
+jobs:
+  table-ocr-class-names:
+    name: Insert Items
+    uses: bancodebogota/bbog-opf-pipeline/.github/workflows/deploy_amplify_backend.yml@v2
+    with:
+      dyn_tbl_name: "BDB.DYN.TBL.TRANSVCMP.REPOSITORY"
+      dyn_pk: absoluteId
+      dyn_items_path: "./src/items_repositoy_types.JSON"
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_VPT_QA }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_VPT_QA }}
