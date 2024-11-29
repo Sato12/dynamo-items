@@ -6,7 +6,7 @@ on:
 jobs:
   table-ocr-class-names:
     name: Insert Items
-    uses: Sato12/test-pipelines/.github/workflows/.github/workflows/requirements_dynamo_table.yml@main
+    uses: Sato12/test-pipelines/.github/workflows/requirements_dynamo_table.yml@main
     with:
       dyn_tbl_name: "BDB.DYN.TBL.TRANSVCMP.REPOSITORY"
       dyn_pk: pk
