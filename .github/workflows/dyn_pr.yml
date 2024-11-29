@@ -8,6 +8,7 @@ jobs:
     name: Insert Items
     uses: Sato12/test-pipelines/.github/workflows/seed_dynamo_table.yml@main
     with:
+      environment: main
       dyn_tbl_name: eventCache
       dyn_pk: pk
       dyn_sk: sk
